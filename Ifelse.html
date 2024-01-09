@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function myFuntion() {
+            var x = parseInt(document.getElementById("today").value);
+            if (x == 1) {
+                document.getElementById("display").innerHTML = "chủ nhật"
+            } else if (x == 2) {
+
+                document.getElementById("display").innerHTML = "thứ 2"
+            } else if (x == 3) {
+
+                document.getElementById("display").innerHTML = "thứ 3"
+            } else if (x == 4) {
+
+                document.getElementById("display").innerHTML = "thứ 4"
+            } else if (x == 5) {
+
+                document.getElementById("display").innerHTML = "thứ 5"
+            } else if (x == 6) {
+
+                document.getElementById("display").innerHTML = "thứ 6"
+            } else if (x == 7) {
+
+                document.getElementById("display").innerHTML = "thứ 7"
+            } else {
+
+                document.getElementById("display").innerHTML = "Must be btween 0 and 7"
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    Today: <input type="text" id="today" onkeyup="myFuntion()">
+    <br>
+    Display:<label type="text" id="display" onkeyup="myFuntion()">
+        <span id="demo"></span>
+        
+
+</body>
+
+</html>
